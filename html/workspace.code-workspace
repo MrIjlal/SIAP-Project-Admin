@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "C:\\Users\\Raihan\\Downloads\\sneat-1.0.0\\sneat-1.0.0\\scss"
+		},
+		{
+			"path": "C:\\Users\\Raihan\\Downloads\\sneat-1.0.0\\sneat-1.0.0\\html"
+		},
+		{
+			"path": "C:\\Users\\Raihan\\Downloads\\sneat-1.0.0\\sneat-1.0.0\\js"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "html"
+	}
+}
