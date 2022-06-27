@@ -42,7 +42,9 @@
 /*
 * Content
 ******************************************************************************/
-
+.mb-4{
+  text-align: justify;
+}
 .demo-blocks > * {
   display: block !important;
 }
