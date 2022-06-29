@@ -240,6 +240,7 @@ button.list-group-item-primary.active {
   color: #696cff;
   border-color: #696cff;
   background: transparent;
+  margin-right: 5px;
 }
 .btn-outline-primary:hover {
   color: #fff;
