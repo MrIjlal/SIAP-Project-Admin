@@ -27,7 +27,7 @@
       content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"
     />
 
-    <title>Beranda</title>
+    <title>Pengaturan Akun</title>
 
     <meta name="description" content="" />
 
@@ -52,8 +52,6 @@
 
     <!-- Vendors CSS -->
     <link rel="stylesheet" href="../assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css" />
-
-    <link rel="stylesheet" href="../assets/vendor/libs/apex-charts/apex-charts.css" />
 
     <!-- Page CSS -->
 
@@ -115,17 +113,14 @@
 
           <ul class="menu-inner py-1">
             <!-- Dashboard -->
-            <li class="menu-item active">
+            <li class="menu-item">
               <a href="index.html" class="menu-link">
                 <i class="menu-icon tf-icons bx bx-home-circle"></i>
                 <div data-i18n="Analytics">Beranda</div>
               </a>
             </li>
-
-            <!-- Layouts -->
-            
-
-            <li class="menu-header small text-uppercase">
+             <!--Administrasi-->
+             <li class="menu-header small text-uppercase">
               <span class="menu-header-text">Administrasi</span>
             </li>
             <li class="menu-item">
@@ -134,21 +129,24 @@
                 <div data-i18n="Tables">Pengajuan</div>
               </a>
             </li>
-
             <li class="menu-item">
               <a href="cards-basic.html" class="menu-link">
                 <i class="menu-icon tf-icons bx bx-collection"></i>
                 <div data-i18n="Basic">Template</div>
               </a>
             </li>
-            
-            <li class="menu-item">
+
+            <!--Aset-->
+            <li class="menu-header small text-uppercase">
+              <span class="menu-header-text">Aset</span>
+            </li>
+            <li class="menu-item active open">
               <a href="javascript:void(0);" class="menu-link menu-toggle">
                 <i class="menu-icon tf-icons bx bx-dock-top"></i>
                 <div data-i18n="Account Settings">Account Settings</div>
               </a>
               <ul class="menu-sub">
-                <li class="menu-item">
+                <li class="menu-item active">
                   <a href="pages-account-settings-account.html" class="menu-link">
                     <div data-i18n="Account">Account</div>
                   </a>
@@ -347,6 +345,73 @@
               </a>
             </li>
 
+            <!-- Forms & Tables -->
+            <li class="menu-header small text-uppercase"><span class="menu-header-text">Forms &amp; Tables</span></li>
+            <!-- Forms -->
+            <li class="menu-item">
+              <a href="javascript:void(0);" class="menu-link menu-toggle">
+                <i class="menu-icon tf-icons bx bx-detail"></i>
+                <div data-i18n="Form Elements">Form Elements</div>
+              </a>
+              <ul class="menu-sub">
+                <li class="menu-item">
+                  <a href="forms-basic-inputs.html" class="menu-link">
+                    <div data-i18n="Basic Inputs">Basic Inputs</div>
+                  </a>
+                </li>
+                <li class="menu-item">
+                  <a href="forms-input-groups.html" class="menu-link">
+                    <div data-i18n="Input groups">Input groups</div>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-item">
+              <a href="javascript:void(0);" class="menu-link menu-toggle">
+                <i class="menu-icon tf-icons bx bx-detail"></i>
+                <div data-i18n="Form Layouts">Form Layouts</div>
+              </a>
+              <ul class="menu-sub">
+                <li class="menu-item">
+                  <a href="form-layouts-vertical.html" class="menu-link">
+                    <div data-i18n="Vertical Form">Vertical Form</div>
+                  </a>
+                </li>
+                <li class="menu-item">
+                  <a href="form-layouts-horizontal.html" class="menu-link">
+                    <div data-i18n="Horizontal Form">Horizontal Form</div>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <!-- Tables -->
+            <li class="menu-item">
+              <a href="tables-basic.html" class="menu-link">
+                <i class="menu-icon tf-icons bx bx-table"></i>
+                <div data-i18n="Tables">Tables</div>
+              </a>
+            </li>
+            <!-- Misc -->
+            <li class="menu-header small text-uppercase"><span class="menu-header-text">Misc</span></li>
+            <li class="menu-item">
+              <a
+                href="https://github.com/themeselection/sneat-html-admin-template-free/issues"
+                target="_blank"
+                class="menu-link"
+              >
+                <i class="menu-icon tf-icons bx bx-support"></i>
+                <div data-i18n="Support">Support</div>
+              </a>
+            </li>
+            <li class="menu-item">
+              <a
+                href="https://themeselection.com/demo/sneat-bootstrap-html-admin-template/documentation/"
+                target="_blank"
+                class="menu-link"
+              >
+                <i class="menu-icon tf-icons bx bx-file"></i>
+                <div data-i18n="Documentation">Documentation</div>
+              </a>
             </li>
           </ul>
         </aside>
@@ -367,14 +432,13 @@
             </div>
 
             <div class="navbar-nav-right d-flex align-items-center" id="navbar-collapse">
-             
+              
 
               <ul class="navbar-nav flex-row align-items-center ms-auto">
                 <!-- Place this tag where you want the button to render. -->
                 <li class="nav-item lh-1 me-3">
                   <a
-                    
-                    data-icon="octicon-star"
+
                     data-size="large"
                     data-show-count="true"
                     aria-label="Star themeselection/sneat-html-admin-template-free on GitHub"
@@ -420,7 +484,7 @@
                     <li>
                       <a class="dropdown-item" href="auth-login-basic.html">
                         <i class="bx bx-power-off me-2"></i>
-                        <span class="align-middle">Keluar</span>
+                        <span class="align-middle">Log Out</span>
                       </a>
                     </li>
                   </ul>
@@ -437,51 +501,117 @@
             <!-- Content -->
 
             <div class="container-xxl flex-grow-1 container-p-y">
+              <h4 class="fw-bold py-3 mb-4">Pengaturan Akun</h4>
+
               <div class="row">
-                  <div class="card">
-                    <div class="d-flex align-items-end row">
-                      <div class="col-sm-7">
-                        <div class="card-body">
-                          <h5 class="card-title text-primary"><b>BERANDA</b></h5>
-                          <p class="mb-4">
-                            Selamat Datang <span class="fw-bold">Raihan!</span> Pada Sistem Informasi Administrasi Persuratan Universitas Pendidikan Indonesia Kampus Purwakarta
-                            <br><br> Sistem ini adalah layanan administrasi untuk mahasiswa UPI Kampus Purwakarta yang memuat aktivitas persuratan yaitu fitur pengajuan surat untuk keperluan administrasi akademik.
-                            <br><br>
-                            Sistem ini dapat diakses oleh seluruh civitas akademik UPI Kampus Purwakarta dimana saja sesuai dengan kondisi dan kebutuhan.
-                            <br><br>
-                            Terima Kasih
-                            <br><br><br><br><br><br><br><br>
-                          </p>
-                        </div>
-                      </div>
-                      <div class="col-sm-5 text-center text-sm-left">
-                        <div class="card-body pb-0 px-0 px-md-4">
-                          <img
-                            src="../assets/img/illustrations/man-with-laptop-light.png"
-                            height="140"
-                            alt="View Badge User"
-                            data-app-dark-img="illustrations/man-with-laptop-dark.png"
-                            data-app-light-img="illustrations/man-with-laptop-light.png"
-                          />
+                <div class="col-md-12">
+                  <div class="card mb-4">
+                    <h5 class="card-header">Detail Profil</h5>
+                    <!-- Account -->
+                    <div class="card-body">
+                      <div class="d-flex align-items-start align-items-sm-center gap-4">
+                        <img
+                          src="../assets/img/Avatar.svg"
+                          alt="user-avatar"
+                          class="d-block rounded"
+                          height="100"
+                          width="100"
+                          id="uploadedAvatar"
+                        />
+                        <div class="button-wrapper">
+                          <label for="upload" class="btn btn-primary me-2 mb-4" tabindex="0">
+                            <span class="d-none d-sm-block">Unggah Foto</span>
+                            <i class="bx bx-upload d-block d-sm-none"></i>
+                            <input
+                              type="file"
+                              id="upload"
+                              class="account-file-input"
+                              hidden
+                              accept="image/png, image/jpeg"
+                            />
+                          </label>
+                          <a href="pages-account-settings-account.html">
+                            <button class="btn btn-outline-secondary account-image-reset mb-4">
+                                <span class="d-none d-sm-block">Kembali</span>
+                              </button>
+                          </a>
+                          <p class="text-muted mb-0">Format JPG atau PNG. Kapasitas maksimal 800K</p>
                         </div>
                       </div>
                     </div>
+                    <hr class="my-0" />
+                    <div class="card-body">
+                      <form id="formAccountSettings" method="POST" onsubmit="return false">
+                        <div class="row">
+                          <div class="mb-3 col-md-6">
+                            <label for="firstName" class="form-label">First Name</label>
+                            <input
+                              class="form-control"
+                              type="text"
+                              id="firstName"
+                              name="firstName"
+                              value="Raihan"
+                              autofocus
+                            />
+                          </div>
+                          <div class="mb-3 col-md-6">
+                            <label for="lastName" class="form-label">Last Name</label>
+                            <input class="form-control" type="text" name="lastName" id="lastName" value="Ijlal" />
+                          </div>
+                          <div class="mb-3 col-md-6">
+                            <label for="email" class="form-label">E-mail</label>
+                            <input
+                              class="form-control"
+                              type="text"
+                              id="email"
+                              name="email"
+                              value="raihanhanan@example.com"
+                              placeholder="raihanhanan@example.com"
+                            />
+                          </div>
+                          <div class="mb-3 col-md-6">
+                            <label for="organization" class="form-label">Organisasi</label>
+                            <input
+                              type="text"
+                              class="form-control"
+                              id="organization"
+                              name="organization"
+                              value="Universitas Pendidikan Indonesia"
+                            />
+                          </div>
+                          <div class="mb-3 col-md-6">
+                            <label class="form-label" for="phoneNumber">Nomor Telefon</label>
+                            <div class="input-group input-group-merge">
+                              <span class="input-group-text">(+62)</span>
+                              <input
+                                type="text"
+                                id="phoneNumber"
+                                name="phoneNumber"
+                                class="form-control"
+                                placeholder="8xx xxxx xxxx"
+                                value="8xx xxxx xxxx"
+                              />
+                            </div>
+                          </div>
+                          <div class="mb-3 col-md-6">
+                            <label for="address" class="form-label">Alamat</label>
+                            <input type="text" class="form-control" id="address" name="address" placeholder="address" value="Indonesia" />
+                          </div>
+                        </div>
+                        <div class="mt-2">
+                          <button type="submit" class="btn btn-primary me-2">Simpan Perubahan</button>
+                          <button type="reset" class="btn btn-outline-secondary">Batal</button>
+                        </div>
+                      </form>
+                    </div>
+                    <!-- /Account -->
                   </div>
+                </div>
+              </div>
             </div>
             <!-- / Content -->
-            <div class="content-backdrop fade"></div>
-          </div>
-          <!-- Content wrapper -->
-        </div>
-        <!-- / Layout page -->
-      </div>
 
-      <!-- Overlay -->
-      <div class="layout-overlay layout-menu-toggle"></div>
-    </div>
-    <!-- / Layout wrapper -->
-
-
+ 
 
     <!-- Core JS -->
     <!-- build:js assets/vendor/js/core.js -->
@@ -494,13 +624,12 @@
     <!-- endbuild -->
 
     <!-- Vendors JS -->
-    <script src="../assets/vendor/libs/apex-charts/apexcharts.js"></script>
 
     <!-- Main JS -->
     <script src="../assets/js/main.js"></script>
 
     <!-- Page JS -->
-    <script src="../assets/js/dashboards-analytics.js"></script>
+    <script src="../assets/js/pages-account-settings-account.js"></script>
 
     <!-- Place this tag in your head or just before your close body tag. -->
     <script async defer src="https://buttons.github.io/buttons.js"></script>
